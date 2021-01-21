@@ -2,7 +2,7 @@ import solution
 
 
 def main():
-    solution.solution(3)
+    solution.solution(13)
 
 
 if __name__ == '__main__':
