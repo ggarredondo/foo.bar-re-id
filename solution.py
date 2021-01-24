@@ -4,7 +4,7 @@ class LambdaString:
     def __init__(self, ndigits):
         self.string = ""
         self.initial = 2
-        self.set_digits(ndigits)
+        self.__set_digits(ndigits)
 
     def __sieve_of_eratosthenes(self, n):
         sieve = [True] * (n+1)
@@ -24,7 +24,7 @@ class LambdaString:
     # Sieve of Eratosthenes is used from 2 through n. If the resulting string
     # is not equal or above the number of digits, Sieve of Eratosthenes is done
     # again from 2 to n+50%. Repeat until the condition is met.
-    def set_digits(self, ndigits):
+    def __set_digits(self, ndigits):
         n = ndigits
         self.__sieve_of_eratosthenes(n)
         while len(self.string) < ndigits:
