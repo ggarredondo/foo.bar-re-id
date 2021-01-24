@@ -2,7 +2,7 @@ import solution
 
 
 def main():
-    solution.solution(10000000)
+    print(solution.solution(0))
 
 
 if __name__ == '__main__':
